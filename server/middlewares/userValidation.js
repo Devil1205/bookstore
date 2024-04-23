@@ -1,4 +1,4 @@
-const { body, validationResult, checkSchema } = require('express-validator');
+const { body, validationResult } = require('express-validator');
 
 exports.registerUserValidation = {
     errors: [

@@ -2,6 +2,7 @@ const jwt = require('jsonwebtoken');
 const User = require('../models/userSchema');
 exports.isAuthenticated = async (req, res, next) => {
     try {
+        //fetch token from cookies and verify it using jwt to authenticate login
         const token = req.cookies.token;
         if (!token) {
             return res.status(400).json({

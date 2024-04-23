@@ -2,6 +2,7 @@
 
 exports.storeToken = async (user, message, res) => {
     try {
+        //generate jwt token for user and store it in response cookie for login
         const token = await user.generateToken();
         const cookieOptions = {
             expires: new Date(Date.now() + process.env.COOKIE_EXPIRY * 24 * 60 * 60 * 1000),

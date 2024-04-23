@@ -1,0 +1,227 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "bookstore",
+    "collectionId": "e394c915-4f05-4ec3-a086-6f28602e2b5b",
+    "dateExported": "2024-04-23T21:18:10.367Z",
+    "version": "1.2",
+    "folders": [
+        {
+            "_id": "1c50043f-f109-43dc-8d2d-a7dcc88e7082",
+            "name": "user",
+            "containerId": "",
+            "created": "2024-04-23T14:15:06.289Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "725844aa-b7a5-4906-adb1-edf46037788a",
+            "name": "book",
+            "containerId": "",
+            "created": "2024-04-23T14:15:18.689Z",
+            "sortNum": 20000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "74c8062b-25b3-4bb6-9169-8eed6b8c9587",
+            "colId": "e394c915-4f05-4ec3-a086-6f28602e2b5b",
+            "containerId": "1c50043f-f109-43dc-8d2d-a7dcc88e7082",
+            "name": "register user",
+            "url": "http://localhost:5000/api/v1/register",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-04-23T14:15:28.265Z",
+            "modified": "2024-04-23T19:50:46.915Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Pulkit Sachdeva\",\n   \"email\": \"sachdeva.pulkit1205p@gmail.com\",\n   \"password\": \"helloworld\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "b942fa70-ecf1-40fd-a9bb-230f77e0f584",
+            "colId": "e394c915-4f05-4ec3-a086-6f28602e2b5b",
+            "containerId": "1c50043f-f109-43dc-8d2d-a7dcc88e7082",
+            "name": "login user",
+            "url": "http://localhost:5000/api/v1/login",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-04-23T14:19:23.900Z",
+            "modified": "2024-04-23T20:19:47.016Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\": \"sachdeva.pulkit2599@gmail.com\",\n  \"password\": \"helloworld\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "5b5ef6a0-cc6b-45ad-9807-053387be3dfe",
+            "colId": "e394c915-4f05-4ec3-a086-6f28602e2b5b",
+            "containerId": "1c50043f-f109-43dc-8d2d-a7dcc88e7082",
+            "name": "get profile",
+            "url": "http://localhost:5000/api/v1/profile",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2024-04-23T14:27:18.155Z",
+            "modified": "2024-04-23T14:27:30.151Z",
+            "headers": []
+        },
+        {
+            "_id": "6989496f-a7e0-405b-86a9-a24f5304c9b4",
+            "colId": "e394c915-4f05-4ec3-a086-6f28602e2b5b",
+            "containerId": "1c50043f-f109-43dc-8d2d-a7dcc88e7082",
+            "name": "update profile",
+            "url": "http://localhost:5000/api/v1/profile",
+            "method": "PUT",
+            "sortNum": 40000,
+            "created": "2024-04-23T14:27:46.624Z",
+            "modified": "2024-04-23T14:28:49.809Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Pulkit Sachdeva\",\n  \"email\": \"sachdeva.pulkit2599@gmail.com\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "d5ae4878-a605-440b-a9d1-61dbdbf78944",
+            "colId": "e394c915-4f05-4ec3-a086-6f28602e2b5b",
+            "containerId": "1c50043f-f109-43dc-8d2d-a7dcc88e7082",
+            "name": "update password",
+            "url": "http://localhost:5000/api/v1/password",
+            "method": "PUT",
+            "sortNum": 50000,
+            "created": "2024-04-23T14:29:09.072Z",
+            "modified": "2024-04-23T14:30:14.910Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"oldPassword\": \"helloworld\",\n  \"password\": \"helloworlds\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "e67da059-bd9d-47ed-9cb4-ea404d1b9e0a",
+            "colId": "e394c915-4f05-4ec3-a086-6f28602e2b5b",
+            "containerId": "1c50043f-f109-43dc-8d2d-a7dcc88e7082",
+            "name": "logout user",
+            "url": "http://localhost:5000/api/v1/logout",
+            "method": "GET",
+            "sortNum": 60000,
+            "created": "2024-04-23T14:31:25.450Z",
+            "modified": "2024-04-23T14:31:35.392Z",
+            "headers": []
+        },
+        {
+            "_id": "2cfbfb3e-984d-4eca-95f0-23e6113ad63e",
+            "colId": "e394c915-4f05-4ec3-a086-6f28602e2b5b",
+            "containerId": "725844aa-b7a5-4906-adb1-edf46037788a",
+            "name": "add book",
+            "url": "http://localhost:5000/api/v1/book",
+            "method": "POST",
+            "sortNum": 70000,
+            "created": "2024-04-23T18:44:05.474Z",
+            "modified": "2024-04-23T20:05:36.783Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"isbn\": 11111111111112,\n  \"title\": \"How to become rich\",\n  \"author\": \"Abhishek\",\n  \"publisher\": \"Anand Enterprises\",\n  \"price\": 499,\n  \"year\": 2001\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "6e9cad45-bfb3-4c7e-ad1d-21cf4fbc4e1e",
+            "colId": "e394c915-4f05-4ec3-a086-6f28602e2b5b",
+            "containerId": "725844aa-b7a5-4906-adb1-edf46037788a",
+            "name": "search books",
+            "url": "http://localhost:5000/api/v1/books?author=Pulkit&price[gte]=100&price[lte]=500",
+            "method": "GET",
+            "sortNum": 80000,
+            "created": "2024-04-23T18:57:08.584Z",
+            "modified": "2024-04-23T21:10:19.496Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "author",
+                    "value": "Pulkit",
+                    "isPath": false
+                },
+                {
+                    "name": "price[gte]",
+                    "value": "100",
+                    "isPath": false
+                },
+                {
+                    "name": "price[lte]",
+                    "value": "500",
+                    "isPath": false
+                }
+            ]
+        },
+        {
+            "_id": "40ca4d15-8525-47fe-8611-ce51fa7a7a85",
+            "colId": "e394c915-4f05-4ec3-a086-6f28602e2b5b",
+            "containerId": "725844aa-b7a5-4906-adb1-edf46037788a",
+            "name": "delete book",
+            "url": "http://localhost:5000/api/v1/book/66280e823d897c03710a00df",
+            "method": "DELETE",
+            "sortNum": 90000,
+            "created": "2024-04-23T19:34:48.329Z",
+            "modified": "2024-04-23T19:39:55.521Z",
+            "headers": []
+        },
+        {
+            "_id": "26009e98-dcb6-44e4-824d-ff6663d3085d",
+            "colId": "e394c915-4f05-4ec3-a086-6f28602e2b5b",
+            "containerId": "725844aa-b7a5-4906-adb1-edf46037788a",
+            "name": "edit book",
+            "url": "http://localhost:5000/api/v1/book/662814e6eaab16bf32b2eb0a",
+            "method": "PUT",
+            "sortNum": 100000,
+            "created": "2024-04-23T19:48:01.777Z",
+            "modified": "2024-04-23T20:11:25.836Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"isbn\": 12341122112212,\n  \"title\": \"First Book updated\",\n  \"author\": \"Pulkit\",\n  \"publisher\": \"A1 Publishers\",\n  \"price\": 199,\n  \"year\": 2002\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "f3badcd7-67bd-4002-a9de-fd19b33dc3e4",
+            "colId": "e394c915-4f05-4ec3-a086-6f28602e2b5b",
+            "containerId": "1c50043f-f109-43dc-8d2d-a7dcc88e7082",
+            "name": "forgot password",
+            "url": "http://localhost:5000/api/v1/password/forgot",
+            "method": "POST",
+            "sortNum": 110000,
+            "created": "2024-04-23T20:16:33.146Z",
+            "modified": "2024-04-23T20:17:15.901Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\": \"sachdeva.pulkit2599@gmail.com\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "ae3d7863-206f-4561-be47-5c653f1fb547",
+            "colId": "e394c915-4f05-4ec3-a086-6f28602e2b5b",
+            "containerId": "1c50043f-f109-43dc-8d2d-a7dcc88e7082",
+            "name": "reset password",
+            "url": "http://localhost:5000/api/v1/password/reset/b64a9b732b8e5a7bf32b663bd230ea79db29ff35",
+            "method": "POST",
+            "sortNum": 120000,
+            "created": "2024-04-23T20:18:30.897Z",
+            "modified": "2024-04-23T20:19:28.704Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"password\":\"helloworld\",\n  \"confirmPassword\": \"helloworld\"\n}",
+                "form": []
+            }
+        }
+    ],
+    "ref": "3A2Flqz19jFLqLEL4CcmU6JJWfai8U6QVcEcJZb-pJbeslAmdPmxPRPHHsKqCudHB9NeXZ2djakQsf-DFYNpLQ"
+}
